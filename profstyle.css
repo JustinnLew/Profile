@@ -1,21 +1,32 @@
+body {
+    background-color: #fcab37;
+    background: linear-gradient(-45deg, #fcab37, #fcab37, #ffc983, #a26918);
+	animation: gradient 15s ease infinite;
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+
 .section1 {
     font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
     background-image: url(Images/Autumn.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
     height:800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-  
-body {
+
+.section2 {
     background-color: #fcab37;
     background: linear-gradient(-45deg, #fcab37, #fcab37, #ffc983, #a26918);
-	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
-    overflow-x: hidden;
+    margin:auto;
+    padding:20px;
 }
 
 h1 {
@@ -36,9 +47,8 @@ h1:hover{
     max-width: 40%;
     margin: 20px auto;
     background-color: mistyrose;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 24px;
 }
 
@@ -50,13 +60,13 @@ ul {
 }
 
 .Intro {
-    padding-top:120px;
+    padding-top:10%;
     font-size: 24px;
-    width: 30%;
-    margin-left:480px;
+    width: 20%;
+    display:block;
+    padding-left:35%;
     color: black;
     text-align:center;
-    position: relative;
 }
   
 footer {
@@ -70,12 +80,14 @@ footer {
 nav {
     background-color: mistyrose;
     padding: 10px;
+    height: 30px;
+    width: 100%;
 }
   
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding:0;
+    margin: auto;
 }
   
 nav ul li {
@@ -90,23 +102,17 @@ nav ul li a {
 }
 
 a:hover {
-    color: coral;
+    color: orange;
     text-shadow: 1px 1px 2px darkred, 0 0 25px grey, 0 0 5px darkblue;
 }
 
 
 .social-icons {
     display: flex;
-}
-  
-.social-icons a {
-    margin-right: 500px;
-    margin-left: 60px;
-    text-align: center;
+    justify-content:space-around;
 }
   
 .social-icons img {
-    float:right;
     width: 80px;
     height: 80px;
     transition-duration: 1s;
@@ -155,7 +161,7 @@ html {
     display: block;
     float:left;
     bottom:-500px;
-    left: 30px;
+    left: 3%;
     transition-duration: 10s;
 }
 .l1 {
@@ -163,6 +169,7 @@ html {
     float:right;
     position: relative;
     bottom:-600px;
+    right:5%;
     transition-duration: 10s;
 }
 .l3 {
