@@ -1,1 +1,1 @@
-<h2>**A website about me!**</h2>
+<h2>A website about me!</h2>
